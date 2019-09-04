@@ -1,0 +1,16 @@
+# levingoviskmatematica
+saque = int(input("Digite o valor desejado para saque: "))
+
+nota101 = saque//100
+nota50 = (saque % 100)//50
+nota20 = ((saque % 100)%50)//20
+nota10 = (((saque % 100)%50)%20)//10
+nota5 = ((((saque % 100)%50)%20)%10)//5
+nota2 = (((((saque % 100)%50)%20)%10)%5)//2
+
+if (saque > 100):
+    print(f"a quantidade de notas disponiveis para o saque são:{nota101} de 100 Reais, {nota50} de 50 Reais, {nota20} de 20 Reais, {nota10} de 10 Reais, {nota5} de 5 Reais, {nota2} de 2 Reais")
+elif (saque < 2 or saque == 3):
+    print("Erro!")
+else:
+    print(f"a quantidade de notas disponiveis para o saque são:{nota100} de 100 Reais, {nota50} de 50 Reais, {nota20} de 20 Reais, {nota10} de 10 Reais, {nota5} de 5 Reais, {nota2} de 2 Reais")
